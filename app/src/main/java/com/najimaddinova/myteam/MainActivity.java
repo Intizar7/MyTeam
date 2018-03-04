@@ -6,12 +6,9 @@ import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.RecyclerView.ViewHolder;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.BaseAdapter;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -48,9 +45,7 @@ public class MainActivity extends AppCompatActivity {
         recycler_view.setHasFixedSize(true);
 
         recycler_view.setAdapter(adapter_items);
-
         recycler_view.setItemAnimator(new DefaultItemAnimator());
-
     }
 
 }
