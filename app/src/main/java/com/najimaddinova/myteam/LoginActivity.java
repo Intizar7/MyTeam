@@ -31,7 +31,7 @@ public class LoginActivity extends AppCompatActivity {
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(LoginActivity.this,SimpleRecyclerAdapter.class);
+                Intent i=new Intent(LoginActivity.this,RegisterActivity.class);
                 startActivity(i);
             }
         });

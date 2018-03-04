@@ -44,19 +44,21 @@ public class RegisterActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_register);
         ID();
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference dtRef = database.getReference();
         final DatabaseReference memberRef = dtRef.child("Kayitlar").child("Kullanicilar");
         mStorageRef = FirebaseStorage.getInstance().getReference();
         mAuth = mAuth.getInstance();
-        userName = edemail.getText().toString();
-        userPassword = edpassword.getText().toString();
 
         btnregister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                userName = edemail.getText().toString();
+                userPassword = edpassword.getText().toString();
+
                 final Person p = new Person();
                 p.setName(edname.getText().toString());
                 p.setSurname(edsurname.getText().toString());
