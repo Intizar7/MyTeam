@@ -48,6 +48,12 @@
             android:id="@+id/edEmail"
             android:hint="E-Mail"
             android:textColorHint="#131213"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edPassword"
+            android:hint="Password"
+            android:textColorHint="#131213"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

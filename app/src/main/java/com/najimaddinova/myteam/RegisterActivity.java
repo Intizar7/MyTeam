@@ -100,7 +100,6 @@ public class RegisterActivity extends AppCompatActivity {
                             if(imageUri != null) {
                                 final StorageReference filepath = mStorageRef.child("Profile")
                                         .child(FirebaseAuth.getInstance().getCurrentUser().getUid());
-
                                 filepath.putFile(imageUri)
                                         .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                                             @Override
@@ -108,9 +107,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                                                 @SuppressWarnings("VisibleForTests") Uri downloadUrl = taskSnapshot.getDownloadUrl();
                                                 Picasso.with(addpicture.getContext()).load(downloadUrl.toString()).into(addpicture);
-
                                                 progressDialog.dismiss();
-
                                                 Toast.makeText(RegisterActivity.this,"Giriş Başarılı",Toast.LENGTH_LONG).show();
                                                 Intent i=new Intent(RegisterActivity.this,SimpleRecyclerAdapter.class);
                                                 startActivity(i);
@@ -121,8 +118,6 @@ public class RegisterActivity extends AppCompatActivity {
                                 Intent i=new Intent(RegisterActivity.this,SimpleRecyclerAdapter.class);
                                 startActivity(i);
                             }
-
-
                         } else {
                             Log.e("ERROR",task.getException().toString());
                             Toast.makeText(RegisterActivity.this,task.getException().getMessage(),Toast.LENGTH_LONG).show();
@@ -145,8 +140,5 @@ public class RegisterActivity extends AppCompatActivity {
         edemail = (EditText) findViewById(R.id.edEmail);
         edpassword = (EditText) findViewById(R.id.edPassword);
         btnregister=(Button) findViewById(R.id.btnRegis);
-
     }
-
-
 }
