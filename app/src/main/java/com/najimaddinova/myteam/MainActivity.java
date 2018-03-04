@@ -80,7 +80,7 @@ public class MainActivity extends BaseAdapter {
         SimpleRecyclerAdapter.ViewHolder vh;
         Person per= (Person) getItem(position);
         if (convertView==null){
-            convertView=mLayoutInfilater.inflate(R.layout.)
+            convertView=mLayoutInfilater.inflate(R.layout.activity_register,null);
         }
 
 
