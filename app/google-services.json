@@ -77,6 +77,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "827602433306-5lr82rl61k9ifce4gj8ndsu7hlbkclj4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.najimaddinova.myteam",
+            "certificate_hash": "901678e35fe079ca386f50dc5929478a83d9dc19"
+          }
+        },
+        {
           "client_id": "827602433306-dbrethmp0ol95d5nsbr2ata7evvc23dt.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -91,8 +99,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "827602433306-dbrethmp0ol95d5nsbr2ata7evvc23dt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
