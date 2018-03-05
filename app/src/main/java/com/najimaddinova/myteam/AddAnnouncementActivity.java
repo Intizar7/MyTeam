@@ -23,7 +23,6 @@ public class AddAnnouncementActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_addannouncement);
-        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
 
         mDatabase = FirebaseDatabase.getInstance().getReference();
 
@@ -35,12 +34,13 @@ public class AddAnnouncementActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String enteredTask = edTitle.getText().toString();
                 if(TextUtils.isEmpty(enteredTask)){
-                    Toast.makeText(AddAnnouncementActivity.this, "You must enter a task first", Toast.LENGTH_LONG).show();
+                    Toast.makeText(AddAnnouncementActivity.this, "You must enter a note first", Toast.LENGTH_LONG).show();
 
                 }
                 else
                 {
                     writeNewAnnouncement(edTitle.getText().toString(), "5 Mart");
+                    startActivity(new Intent(AddAnnouncementActivity.this, ListActivity.class));
                 }
             }
         });

@@ -19,6 +19,7 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".RegisterActivity"></activity>
         <activity android:name=".AddAnnouncementActivity"></activity>
+        <activity android:name=".ListActivity"></activity>
 
     </application>
 

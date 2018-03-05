@@ -18,38 +18,29 @@ import java.util.List;
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
-        public EditText person_name;
-        public ImageView person_img;
-        public CardView card_view;
-        public EditText person_surname;
-        public EditText person_age;
-        public int photo_id;
+        public TextView title;
+        public TextView date;
 
         public ViewHolder(View view) {
             super(view);
-            card_view = (CardView)view.findViewById(R.id.card_view);
-            person_name = (EditText) view.findViewById(R.id.person_name);
-            person_surname=(EditText)view.findViewById(R.id.person_photo);
-            person_img = (ImageView)view.findViewById(R.id.person_photo);
-            person_age=(EditText)view.findViewById(R.id.person_age);
+            title = (TextView) view.findViewById(R.id.announcement_title);
+            date=(TextView) view.findViewById(R.id.txtdate);
         }
     }
-    List<Person> list_person;
+    List<Announcement> list;
     Person.CustomItemClickListener listener;
-    public SimpleRecyclerAdapter(List<Person> list_person, Person.CustomItemClickListener listener) {
-        this.list_person = list_person;
-        this.listener = listener;
+    public SimpleRecyclerAdapter(List<Announcement> list) {
+        this.list = list;
     }
     @Override
     public SimpleRecyclerAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_view_layout, parent, false);
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycle_layout, parent, false);
         final ViewHolder view_holder = new ViewHolder(v);
 
         v.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                listener.onItemClick(v, view_holder.getPosition());
             }
         });
         return view_holder;
@@ -58,16 +49,14 @@ import java.util.List;
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
 
-        holder.person_name.setText(list_person.get(position).getName());
-        holder.person_age.setText(list_person.get(position).getAge());
-        holder.person_img.setImageResource(list_person.get(position).getPhoto_id());
-        holder.person_surname.setText(list_person.get(position).getSurname());
+        holder.title.setText(list.get(position).getTitle());
+        holder.date.setText(list.get(position).getDate());
 
     }
 
     @Override
     public int getItemCount() {
-        return list_person.size();
+        return list.size();
     }
     @Override
     public void onAttachedToRecyclerView(RecyclerView recyclerView) {

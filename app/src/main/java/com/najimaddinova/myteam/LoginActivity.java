@@ -52,7 +52,7 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LoginActivity.this, AddAnnouncementActivity.class));
+                startActivity(new Intent(LoginActivity.this, ListActivity.class));
 //                username=edUser.getText().toString();
 //                password=edPassword.getText().toString();
 //                if(username.isEmpty() || password.isEmpty()){
