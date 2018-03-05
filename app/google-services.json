@@ -1,0 +1,117 @@
+{
+  "project_info": {
+    "project_number": "827602433306",
+    "firebase_url": "https://react-native-6c295.firebaseio.com",
+    "project_id": "react-native-6c295",
+    "storage_bucket": "react-native-6c295.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:827602433306:android:ad19d2f1a0bb4a23",
+        "android_client_info": {
+          "package_name": "com.dbdeneme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "827602433306-dbrethmp0ol95d5nsbr2ata7evvc23dt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDevre-hEBvEhTh_ef9Dn6nSjoCUIlUviY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:827602433306:android:8d4e41f333ad27fa",
+        "android_client_info": {
+          "package_name": "com.invertase.rnfirebasestarter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "827602433306-dbrethmp0ol95d5nsbr2ata7evvc23dt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDevre-hEBvEhTh_ef9Dn6nSjoCUIlUviY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:827602433306:android:e847fc0d73675f25",
+        "android_client_info": {
+          "package_name": "com.najimaddinova.myteam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "827602433306-5lr82rl61k9ifce4gj8ndsu7hlbkclj4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.najimaddinova.myteam",
+            "certificate_hash": "901678e35fe079ca386f50dc5929478a83d9dc19"
+          }
+        },
+        {
+          "client_id": "827602433306-dbrethmp0ol95d5nsbr2ata7evvc23dt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDevre-hEBvEhTh_ef9Dn6nSjoCUIlUviY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "827602433306-dbrethmp0ol95d5nsbr2ata7evvc23dt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
