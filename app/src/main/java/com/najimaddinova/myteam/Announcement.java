@@ -10,7 +10,6 @@ public class Announcement {
 
         private String title;
         private String date;
-        boolean isRead;
 
 
         public String getTitle()
@@ -42,9 +41,6 @@ public class Announcement {
     }
 
 
-    public interface CustomItemClickListener {
-        void onItemClick(View v, int position);
-    }
 
 
 

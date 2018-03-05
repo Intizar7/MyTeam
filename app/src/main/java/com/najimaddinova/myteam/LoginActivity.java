@@ -52,13 +52,14 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                username=edUser.getText().toString();
-                password=edPassword.getText().toString();
-                if(username.isEmpty() || password.isEmpty()){
-                    Toast.makeText(getApplicationContext(),"Lütfen gerekli alanı doldurunuz!",Toast.LENGTH_LONG).show();
-                }else{
-                    loginFunc();
-                }
+                startActivity(new Intent(LoginActivity.this, AddAnnouncementActivity.class));
+//                username=edUser.getText().toString();
+//                password=edPassword.getText().toString();
+//                if(username.isEmpty() || password.isEmpty()){
+//                    Toast.makeText(getApplicationContext(),"Lütfen gerekli alanı doldurunuz!",Toast.LENGTH_LONG).show();
+//                }else{
+//                    loginFunc();
+//                }
             }
         });
         btnRegister.setOnClickListener(new View.OnClickListener() {
